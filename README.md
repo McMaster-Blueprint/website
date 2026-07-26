@@ -1,6 +1,6 @@
-# Blueprint Landing
+# McMaster Blueprint Website
 
-Landing page for Blueprint chapters, built with Next.js.
+Website for the McMaster Blueprint chapter.
 
 ## Getting Started
 
