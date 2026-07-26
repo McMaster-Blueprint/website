@@ -1,0 +1,84 @@
+{
+  "$schema": "Blueprint chapter landing page design system",
+  "name": "Blueprint",
+  "color": {
+    "brand": {
+      "primary": "#0078E8",
+      "primaryLight": "#93C9FE",
+      "ink": "#333333"
+    },
+    "neutral": {
+      "50": "#FAFAFA",
+      "100": "#F4F4F5",
+      "200": "#E4E4E7",
+      "300": "#D4D4D8",
+      "400": "#A1A1AA",
+      "500": "#71717A",
+      "600": "#52525B",
+      "700": "#3F3F46",
+      "800": "#27272A",
+      "900": "#18181B"
+    },
+    "background": "#FFFFFF",
+    "backgroundDark": "#0B0F14",
+    "foreground": "#171717",
+    "foregroundDark": "#F4F4F5",
+    "success": "#16A34A",
+    "warning": "#D97706",
+    "danger": "#DC2626"
+  },
+  "typography": {
+    "fontFamily": {
+      "heading": "var(--font-poppins), ui-sans-serif, system-ui, sans-serif",
+      "body": "var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif",
+      "mono": "var(--font-geist-mono), ui-monospace, monospace"
+    },
+    "weight": {
+      "regular": 400,
+      "medium": 500,
+      "semibold": 600,
+      "bold": 700
+    },
+    "scale": {
+      "display": { "size": "3.5rem", "lineHeight": "1.05", "weight": 700 },
+      "h1": { "size": "2.5rem", "lineHeight": "1.1", "weight": 700 },
+      "h2": { "size": "1.875rem", "lineHeight": "1.2", "weight": 600 },
+      "h3": { "size": "1.5rem", "lineHeight": "1.3", "weight": 600 },
+      "body": { "size": "1rem", "lineHeight": "1.6", "weight": 400 },
+      "small": { "size": "0.875rem", "lineHeight": "1.5", "weight": 400 },
+      "caption": { "size": "0.75rem", "lineHeight": "1.4", "weight": 500 }
+    }
+  },
+  "spacing": {
+    "unit": "4px",
+    "scale": [0, 4, 8, 12, 16, 24, 32, 48, 64, 96, 128]
+  },
+  "radius": {
+    "sm": "6px",
+    "md": "10px",
+    "lg": "16px",
+    "full": "9999px"
+  },
+  "shadow": {
+    "sm": "0 1px 2px rgba(0,0,0,0.05)",
+    "md": "0 4px 12px rgba(0,0,0,0.08)",
+    "lg": "0 12px 32px rgba(0,0,0,0.12)"
+  },
+  "logo": {
+    "assets": {
+      "mark": "/logos/logo.png",
+      "markNegative": "/logos/logo_negative.png",
+      "square": "/logos/square.png",
+      "squareNegative": "/logos/square_negative.png",
+      "banner": "/logos/banner.png",
+      "bannerNegative": "/logos/banner_negative.png"
+    },
+    "usage": "Use the negative (white) variants on brand-primary or dark backgrounds; use standard variants on white/light backgrounds. Maintain clear space around the mark equal to the height of the 'b' in the wordmark."
+  },
+  "breakpoints": {
+    "sm": "640px",
+    "md": "768px",
+    "lg": "1024px",
+    "xl": "1280px"
+  }
+}

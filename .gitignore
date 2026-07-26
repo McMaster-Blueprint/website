@@ -36,6 +36,9 @@ yarn-error.log*
 # vercel
 .vercel
 
+# tendo browser tool artifacts
+.tendo/
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
