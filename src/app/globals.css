@@ -7,6 +7,8 @@
   --color-primary: #0078e8;
   --color-primary-light: #93c9fe;
   --color-ink: #333333;
+  --color-maroon: #7a003c;
+
 }
 
 @theme inline {
@@ -15,6 +17,7 @@
   --color-primary: var(--color-primary);
   --color-primary-light: var(--color-primary-light);
   --color-ink: var(--color-ink);
+  --color-maroon: var(--color-maroon);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --font-heading: var(--font-poppins);
