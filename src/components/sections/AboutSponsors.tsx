@@ -38,7 +38,7 @@ export default function AboutSponsors() {
           </div>
 
           <a
-            href="mailto:[CONTACT EMAIL]"
+            href="mailto: mcmasterblueprint@gmail.com"
             className="mt-10 inline-block rounded-full bg-primary px-8 py-3 font-heading font-semibold text-white transition hover:bg-primary/90"
           >
             Become a sponsor
