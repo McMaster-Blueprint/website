@@ -14,7 +14,7 @@
  * ---------------------------------------------------------------------------
  */
 
-export const applicationsOpen = false;
+export const applicationsOpen = true;
 
 /** Shown on the closed state so people know when to come back. */
 export const closedMessage =
@@ -81,7 +81,7 @@ export const roles: Role[] = [
     name: "VP Operations",
     blurb:
       "Manage internal logistics: finances, room bookings, attendance, and the day-to-day that keeps the chapter running.",
-    open: false,
+    open: true,
     form: "[VP_OPERATIONS_FORM_URL]",
   },
 ]
