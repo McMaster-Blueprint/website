@@ -59,13 +59,13 @@ export default function AboutValues() {
           show up in real decisions, not just on this page.
         </p>
 
-        <ul className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-6">
+        <ul className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-6">
           {values.map((value) => (
             <li
               key={value.mark}
-              className={`rounded-2xl border border-white/25 bg-white/5 p-7 backdrop-blur-sm transition hover:border-white/50 hover:bg-white/10 ${value.span}`}
+              className={`rounded-3xl bg-white/10 p-8 shadow-lg shadow-primary-light/10 ${value.span}`}
             >
-              <span className="flex size-10 items-center justify-center rounded-full bg-maroon font-mono text-sm font-semibold text-white">
+              <span className="flex size-11 items-center justify-center rounded-full bg-white font-mono text-sm font-semibold text-primary">
                 {value.mark}
               </span>
               <h3 className="mt-6 font-heading text-xl font-bold">

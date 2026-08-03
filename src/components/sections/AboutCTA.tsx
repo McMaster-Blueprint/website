@@ -18,7 +18,7 @@ export default function AboutCTA() {
           </a>
         </div>
 
-        <div className="rounded-2xl bg-maroon p-10 text-white">
+        <div className="rounded-2xl bg-primary p-10 text-white">
           <h3 className="font-heading text-2xl font-bold sm:text-3xl">
             Bring us a problem.
           </h3>
@@ -28,7 +28,7 @@ export default function AboutCTA() {
           </p>
           <a
             href="/contact"
-            className="mt-8 inline-block rounded-full bg-white px-8 py-3 font-heading font-semibold text-maroon transition hover:bg-white/90"
+            className="mt-8 inline-block rounded-full bg-white px-8 py-3 font-heading font-semibold text-primary transition hover:bg-white/90"
           >
             Start a conversation
           </a>

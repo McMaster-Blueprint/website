@@ -72,7 +72,6 @@ const groups: Group[] = [
         role: "VP Technology",
         program: "Software Engineering",
         year: "Second Year",
-        // Double-check this slug -- LinkedIn handles don't start with a hyphen.
         linkedin: "https://www.linkedin.com/in/-ianyeh/",
         photo: null,
       },
