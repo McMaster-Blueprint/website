@@ -17,7 +17,7 @@ export default function HomeHero() {
         alt="McMaster Blueprint"
         width={96}
         height={96}
-        className="relative z-10 mb-8"
+        className="relative z-10 mb-8 h-24 w-auto"
         priority
       />
       <h1 className="relative z-10 max-w-3xl font-heading text-5xl font-bold leading-tight sm:text-6xl">
