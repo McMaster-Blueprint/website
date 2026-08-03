@@ -1,21 +1,23 @@
+import Image from "next/image";
+
 const projects = [
   {
-    name: "Project Atlas",
-    partner: "Regional food bank network",
-    status: "Live",
+    name: "Project 1",
+    partner: "Regional Food Bank Network",
     body: "A volunteer scheduling platform that replaced a shared spreadsheet, so coordinators can fill shifts in minutes instead of chasing texts.",
+    image: "/projects/atlas.jpg",
   },
   {
-    name: "Project Beacon",
-    partner: "Youth outreach nonprofit",
-    status: "Live",
+    name: "Project 2",
+    partner: "Youth Outreach Nonprofit",
     body: "A case management tool that lets outreach workers log visits from the field and hand off cases without losing context.",
+    image: "/projects/beacon.jpg",
   },
   {
-    name: "Project Compass",
-    partner: "Small charity coalition",
-    status: "In progress",
+    name: "Project 3",
+    partner: "Small Charity Coalition",
     body: "A donor and grant tracking dashboard built for organizations too small to justify a paid CRM.",
+    image: "/projects/compass.jpg",
   },
 ];
 
@@ -31,28 +33,28 @@ export default function ProjectsGrid() {
           {projects.map((project) => (
             <div
               key={project.name}
-              className="flex h-full flex-col rounded-2xl border border-neutral-200 p-7"
+              className="flex h-full flex-col overflow-hidden rounded-2xl border border-neutral-200"
             >
-              <div className="flex items-center justify-between gap-3">
-                <span className="font-mono text-xs uppercase tracking-[0.14em] text-neutral-500">
-                  {project.partner}
-                </span>
-                <span
-                  className={`flex-none rounded-full px-2.5 py-0.5 font-mono text-[10px] font-semibold uppercase tracking-wide ${
-                    project.status === "Live"
-                      ? "bg-primary/10 text-primary"
-                      : "bg-amber/10 text-amber"
-                  }`}
-                >
-                  {project.status}
-                </span>
+              <div className="relative aspect-[3/4] w-full">
+                <Image
+                  src={project.image}
+                  alt={project.name}
+                  fill
+                  className="object-cover"
+                  sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                />
               </div>
-              <h3 className="mt-4 font-heading text-xl font-bold text-primary">
-                {project.name}
-              </h3>
-              <p className="mt-3 flex-1 leading-relaxed text-ink">
-                {project.body}
-              </p>
+              <div className="flex flex-1 flex-col p-7 font-heading">
+                <h3 className="text-xl font-bold text-primary">
+                  {project.partner}
+                </h3>
+                <span className="mt-1 text-sm text-neutral-500">
+                  {project.name}
+                </span>
+                <p className="mt-3 flex-1 leading-relaxed text-ink">
+                  {project.body}
+                </p>
+              </div>
             </div>
           ))}
         </div>
