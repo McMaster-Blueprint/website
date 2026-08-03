@@ -3,10 +3,7 @@ export default function AboutCTA() {
     <section className="px-6 py-24 sm:px-12 lg:px-24">
       <div className="mx-auto grid max-w-6xl gap-6 lg:grid-cols-2">
         <div className="rounded-2xl bg-primary p-10 text-white">
-          <p className="font-mono text-xs uppercase tracking-[0.2em] text-primary-light">
-            For students
-          </p>
-          <h3 className="mt-4 font-heading text-2xl font-bold sm:text-3xl">
+          <h3 className="font-heading text-2xl font-bold sm:text-3xl">
             Join the next team.
           </h3>
           <p className="mt-3 max-w-sm leading-relaxed text-white/85">
@@ -22,10 +19,7 @@ export default function AboutCTA() {
         </div>
 
         <div className="rounded-2xl bg-maroon p-10 text-white">
-          <p className="font-mono text-xs uppercase tracking-[0.2em] text-white/70">
-            For nonprofits
-          </p>
-          <h3 className="mt-4 font-heading text-2xl font-bold sm:text-3xl">
+          <h3 className="font-heading text-2xl font-bold sm:text-3xl">
             Bring us a problem.
           </h3>
           <p className="mt-3 max-w-sm leading-relaxed text-white/85">

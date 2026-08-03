@@ -11,10 +11,7 @@ export default function JoinRoles() {
         <div className="mx-auto max-w-6xl">
           <Reveal>
             <div className="rounded-2xl border border-neutral-200 bg-neutral-50 p-10 text-center sm:p-16">
-              <p className="font-mono text-xs uppercase tracking-[0.2em] text-maroon">
-                Applications closed
-              </p>
-              <p className="mx-auto mt-4 max-w-md font-heading text-2xl font-bold leading-snug text-primary sm:text-3xl">
+              <p className="mx-auto max-w-md font-heading text-2xl font-bold leading-snug text-primary sm:text-3xl">
                 {closedMessage}
               </p>
             </div>
@@ -28,10 +25,7 @@ export default function JoinRoles() {
     <section id="roles" className="px-6 py-24 sm:px-12 lg:px-24">
       <div className="mx-auto max-w-6xl">
         <Reveal>
-          <p className="font-mono text-xs uppercase tracking-[0.2em] text-maroon">
-            Open roles
-          </p>
-          <h2 className="mt-4 max-w-2xl font-heading text-3xl font-bold leading-[1.15] text-primary sm:text-4xl">
+          <h2 className="max-w-2xl font-heading text-3xl font-bold leading-[1.15] text-primary sm:text-4xl">
             We&apos;re hiring.
           </h2>
         </Reveal>

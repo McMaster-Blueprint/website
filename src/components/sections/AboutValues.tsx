@@ -51,10 +51,7 @@ export default function AboutValues() {
       />
 
       <div className="relative mx-auto max-w-6xl">
-        <p className="font-mono text-xs uppercase tracking-[0.2em] text-primary-light">
-          Our values
-        </p>
-        <h2 className="mt-4 max-w-2xl font-heading text-3xl font-bold leading-[1.15] sm:text-4xl">
+        <h2 className="max-w-2xl font-heading text-3xl font-bold leading-[1.15] sm:text-4xl">
           The five.
         </h2>
         <p className="mt-4 max-w-xl text-lg leading-relaxed text-white/85">

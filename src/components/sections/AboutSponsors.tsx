@@ -8,10 +8,7 @@ export default function AboutSponsors() {
     >
       <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[0.8fr_1.2fr]">
         <div>
-          <p className="font-mono text-xs uppercase tracking-[0.2em] text-maroon">
-            Our sponsors
-          </p>
-          <h2 className="mt-4 font-heading text-3xl font-bold leading-[1.15] text-primary sm:text-4xl">
+          <h2 className="font-heading text-3xl font-bold leading-[1.15] text-primary sm:text-4xl">
             Thank you.
           </h2>
         </div>

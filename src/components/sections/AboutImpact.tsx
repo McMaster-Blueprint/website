@@ -9,10 +9,7 @@ export default function AboutImpact() {
   return (
     <section id="impact" className="bg-neutral-50 px-6 py-24 sm:px-12 lg:px-24">
       <div className="mx-auto max-w-6xl">
-        <p className="font-mono text-xs uppercase tracking-[0.2em] text-maroon">
-          Our impact
-        </p>
-        <h2 className="mt-4 max-w-2xl font-heading text-3xl font-bold leading-[1.15] text-primary sm:text-4xl">
+        <h2 className="max-w-2xl font-heading text-3xl font-bold leading-[1.15] text-primary sm:text-4xl">
           What we&apos;ve built so far.
         </h2>
         <p className="mt-4 max-w-xl text-lg leading-relaxed text-ink">

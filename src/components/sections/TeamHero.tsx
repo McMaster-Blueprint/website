@@ -17,11 +17,7 @@ export default function TeamHero() {
       />
 
       <div className="relative mx-auto max-w-6xl">
-        <p className="font-mono text-xs uppercase tracking-[0.22em] text-white/80">
-          Executive &amp; project teams
-        </p>
-
-        <h1 className="mt-6 max-w-3xl font-heading text-5xl font-bold leading-[1.05] sm:text-6xl lg:text-7xl">
+        <h1 className="max-w-3xl font-heading text-5xl font-bold leading-[1.05] sm:text-6xl lg:text-7xl">
           Meet the{" "}
           <span className="inline-block rounded-lg bg-maroon px-4 py-1">
             team

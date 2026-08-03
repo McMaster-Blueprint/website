@@ -19,18 +19,8 @@ export default function JoinHero() {
       />
 
       <div className="relative mx-auto max-w-6xl">
-        <p className="rise-in flex items-center gap-2.5 font-mono text-xs uppercase tracking-[0.22em] text-white/80">
-          <span
-            className={`inline-block size-2 rounded-full ${
-              applicationsOpen ? "bg-white" : "bg-white/40"
-            }`}
-          />
-          {applicationsOpen ? "Applications open" : "Applications closed"}
-        </p>
-
         <h1
-          className="rise-in mt-6 max-w-3xl font-heading text-5xl font-bold leading-[1.05] sm:text-6xl lg:text-7xl"
-          style={{ animationDelay: "80ms" }}
+          className="rise-in max-w-3xl font-heading text-5xl font-bold leading-[1.05] sm:text-6xl lg:text-7xl"
         >
           Build for{" "}
           <span className="inline-block rounded-lg bg-maroon px-4 py-1">

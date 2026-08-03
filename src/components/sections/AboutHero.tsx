@@ -19,11 +19,7 @@ export default function AboutHero() {
 
       <div className="relative mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-[1.05fr_0.95fr]">
         <div>
-          <p className="font-mono text-xs uppercase tracking-[0.22em] text-white/80">
-            Tech for social good &middot; Hamilton, Ontario
-          </p>
-
-          <h1 className="mt-6 font-heading text-5xl font-bold leading-[1.05] sm:text-6xl lg:text-7xl">
+          <h1 className="font-heading text-5xl font-bold leading-[1.05] sm:text-6xl lg:text-7xl">
             About{" "}
             <span className="inline-block rounded-lg bg-maroon px-4 py-1">
               us

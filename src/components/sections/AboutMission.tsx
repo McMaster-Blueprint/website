@@ -3,10 +3,7 @@ export default function AboutMission() {
     <section id="mission" className="px-6 py-24 sm:px-12 lg:px-24">
       <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[0.8fr_1.2fr]">
         <div>
-          <p className="font-mono text-xs uppercase tracking-[0.2em] text-maroon">
-            Our mission
-          </p>
-          <h2 className="mt-4 font-heading text-3xl font-bold leading-[1.15] text-primary sm:text-4xl">
+          <h2 className="font-heading text-3xl font-bold leading-[1.15] text-primary sm:text-4xl">
             Making technology
             <br className="hidden sm:block" /> useful to people
             <br className="hidden sm:block" /> doing good work.
@@ -37,11 +34,8 @@ export default function AboutMission() {
             </p>
           </div>
 
-          <div className="mt-10 rounded-lg border-l-4 border-maroon bg-neutral-50 p-6">
-            <p className="font-mono text-xs uppercase tracking-[0.2em] text-neutral-500">
-              Our roots
-            </p>
-            <p className="mt-3 text-lg leading-relaxed text-ink">
+          <div className="mt-10 rounded-lg bg-neutral-50 p-6">
+            <p className="text-lg leading-relaxed text-ink">
               Blueprint started at UC Berkeley and has grown into chapters across
               North America. McMaster joined the network in 2026 and follows the same five values every chapter shares.
             </p>

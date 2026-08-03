@@ -40,10 +40,7 @@ export default function AboutProcess() {
   return (
     <section id="process" className="px-6 py-24 sm:px-12 lg:px-24">
       <div className="mx-auto max-w-6xl">
-        <p className="font-mono text-xs uppercase tracking-[0.2em] text-maroon">
-          How a term runs
-        </p>
-        <h2 className="mt-4 max-w-2xl font-heading text-3xl font-bold leading-[1.15] text-primary sm:text-4xl">
+        <h2 className="max-w-2xl font-heading text-3xl font-bold leading-[1.15] text-primary sm:text-4xl">
           Scope, build, hand over.
         </h2>
         <p className="mt-4 max-w-xl text-lg leading-relaxed text-ink">

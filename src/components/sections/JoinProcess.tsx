@@ -26,10 +26,7 @@ export default function JoinProcess() {
   return (
     <section className="bg-neutral-50 px-6 py-24 sm:px-12 lg:px-24">
       <div className="mx-auto max-w-6xl">
-        <p className="font-mono text-xs uppercase tracking-[0.2em] text-maroon">
-          After you apply
-        </p>
-        <h2 className="mt-4 max-w-2xl font-heading text-3xl font-bold leading-[1.15] text-primary sm:text-4xl">
+        <h2 className="max-w-2xl font-heading text-3xl font-bold leading-[1.15] text-primary sm:text-4xl">
           What to expect.
         </h2>
 

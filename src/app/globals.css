@@ -8,6 +8,9 @@
   --color-primary-light: #93c9fe;
   --color-ink: #333333;
   --color-maroon: #7a003c;
+  --color-amber: #e2962f;
+  --color-blueprint: #0a2f52;
+  --color-blueprint-light: #1c5a90;
 }
 
 @theme inline {
@@ -17,6 +20,9 @@
   --color-primary-light: var(--color-primary-light);
   --color-ink: var(--color-ink);
   --color-maroon: var(--color-maroon);
+  --color-amber: var(--color-amber);
+  --color-blueprint: var(--color-blueprint);
+  --color-blueprint-light: var(--color-blueprint-light);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --font-heading: var(--font-poppins);
@@ -36,5 +42,52 @@ html {
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.bp-corners {
+  position: relative;
+}
+
+.bp-corners::before,
+.bp-corners::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+}
+
+.bp-corners::before {
+  top: -1px;
+  left: -1px;
+  border-top: 1.5px solid var(--color-primary);
+  border-left: 1.5px solid var(--color-primary);
+}
+
+.bp-corners::after {
+  bottom: -1px;
+  right: -1px;
+  border-bottom: 1.5px solid var(--color-primary);
+  border-right: 1.5px solid var(--color-primary);
+}
+
+.bp-corner-tr,
+.bp-corner-bl {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+}
+
+.bp-corner-tr {
+  top: -1px;
+  right: -1px;
+  border-top: 1.5px solid var(--color-primary);
+  border-right: 1.5px solid var(--color-primary);
+}
+
+.bp-corner-bl {
+  bottom: -1px;
+  left: -1px;
+  border-bottom: 1.5px solid var(--color-primary);
+  border-left: 1.5px solid var(--color-primary);
 }

@@ -76,14 +76,7 @@ export default function JoinFaq() {
   return (
     <section className="px-6 py-24 sm:px-12 lg:px-24">
       <div className="mx-auto max-w-6xl">
-        <div className="flex items-center gap-4">
-          <span className="rounded-full bg-maroon px-3.5 py-1.5 font-mono text-xs font-semibold uppercase tracking-[0.16em] text-white">
-            FAQ
-          </span>
-          <span className="h-px flex-1 bg-neutral-200" />
-        </div>
-
-        <h2 className="mt-6 max-w-2xl font-heading text-3xl font-bold leading-[1.15] text-primary sm:text-4xl">
+        <h2 className="max-w-2xl font-heading text-3xl font-bold leading-[1.15] text-primary sm:text-4xl">
           Frequently asked questions.
         </h2>
 

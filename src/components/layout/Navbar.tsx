@@ -5,11 +5,12 @@ import Image from "next/image";
 import Link from "next/link";
 
 const links = [
+  { label: "Home", href: "/" },
   { label: "About", href: "/about" },
-  { label: "Projects", href: "/#projects" },
+  { label: "Projects", href: "/projects" },
   { label: "Team", href: "/team" },
   { label: "Join The Team", href: "/join" },
-  { label: "Contact", href: "/#contact" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export default function Navbar() {
