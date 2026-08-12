@@ -73,7 +73,7 @@ const groups: Group[] = [
         program: "Software Engineering",
         year: "Second Year",
         linkedin: "https://www.linkedin.com/in/-ianyeh/",
-        photo: null,
+        photo: "/team/ian-yeh.jpg",
       },
       {
         name: "Osman Raza",
