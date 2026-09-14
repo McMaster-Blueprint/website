@@ -32,7 +32,7 @@ export default function HomeHero() {
       </p>
       <div className="relative z-10 mt-10 flex flex-wrap items-center justify-center gap-4">
         <a
-          href="#"
+          href="/join"
           className="rounded-full bg-white px-8 py-3 font-heading font-semibold text-primary transition hover:bg-white/90"
         >
           Apply Now
