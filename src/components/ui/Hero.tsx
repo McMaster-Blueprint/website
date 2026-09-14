@@ -54,7 +54,7 @@ export default function Hero({
             className={`${rise} max-w-3xl font-heading text-5xl font-bold leading-[1.05] sm:text-6xl lg:text-7xl`}
           >
             {heading}{" "}
-            <span className="inline-block rounded-lg bg-maroon px-4 py-1">
+            <span className="inline-block rounded-lg bg-maroon px-4 py-1 leading-normal">
               {highlight}
             </span>
           </h1>
