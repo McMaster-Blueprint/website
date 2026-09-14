@@ -35,7 +35,7 @@ type Group = {
   label: string;
   members: Member[];
   /** Renders dashed "open role" cards after the members. */
-  openSeats?: number;
+  openRoles?: string[];
 };
 
 const groups: Group[] = [
@@ -116,6 +116,7 @@ const groups: Group[] = [
         photo: "/team/ritisha-perumalla.jpg",
       },
     ],
+    openRoles: ["VP Operations", "VP Internal"],
   },
 ];
 
@@ -178,7 +179,7 @@ function MemberCard({ member }: { member: Member }) {
   );
 }
 
-function OpenSeatCard() {
+function OpenSeatCard({ role }: { role: string }) {
   return (
     <li className="flex flex-col rounded-xl border border-dashed border-neutral-300 bg-neutral-50 p-3">
       <div className="flex aspect-square items-center justify-center rounded-lg border border-dashed border-neutral-300">
@@ -190,10 +191,10 @@ function OpenSeatCard() {
         </span>
       </div>
       <h3 className="mt-2.5 font-heading text-sm font-bold leading-tight text-neutral-400">
-        Open role
+        {role}
       </h3>
       <p className="mt-0.5 text-xs leading-tight text-neutral-400">
-        Recruiting this fall
+        Currently Recruiting
       </p>
     </li>
   );
@@ -204,7 +205,7 @@ export default function TeamGrid() {
     <section id="team" className="px-6 py-24 sm:px-12 lg:px-24">
       <div className="mx-auto max-w-6xl space-y-16">
         {groups.map((group) => {
-          const openSeats = group.openSeats ?? 0;
+          const openRoles = group.openRoles ?? [];
 
           return (
             <div key={group.id}>
@@ -224,8 +225,8 @@ export default function TeamGrid() {
                 {group.members.map((member) => (
                   <MemberCard key={member.name} member={member} />
                 ))}
-                {Array.from({ length: openSeats }).map((_, i) => (
-                  <OpenSeatCard key={`open-${i}`} />
+                {openRoles.map((role) => (
+                  <OpenSeatCard key={role} role={role} />
                 ))}
               </ul>
             </div>

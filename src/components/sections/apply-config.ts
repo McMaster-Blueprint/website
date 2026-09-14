@@ -1,18 +1,6 @@
-/**
- * ---------------------------------------------------------------------------
- * APPLY PAGE CONFIG — the only file you edit to open/close hiring.
- *
- *  applicationsOpen: false  -> whole page shows "not hiring, check back in
- *                              September". No roles render.
- *  applicationsOpen: true   -> roles with `open: true` show up with their
- *                              Google Form link. Roles with `open: false`
- *                              are hidden entirely.
- *
- * So to open hiring for developers only: set applicationsOpen = true, set the
- * developer role open = true, leave the others false. Paste each open role's
- * Google Form URL into `form`.
- * ---------------------------------------------------------------------------
- */
+// Only file to edit to open/close hiring.
+// applicationsOpen=false -> "not hiring" page, no roles shown.
+// applicationsOpen=true -> roles with open=true show with their form link.
 
 export const applicationsOpen = true;
 
@@ -31,7 +19,7 @@ export const roles: Role[] = [
   {
     name: "Developer",
     blurb:
-      "Build the product. You'll work across the stack on a real codebase with a small team, shipping software a nonprofit will actually use.",
+      "You'll work across the stack on a real codebase with a small team, shipping software a nonprofit will actually use.",
     open: true,
     form: "[DEVELOPER_FORM_URL]",
   },
@@ -60,7 +48,7 @@ export const roles: Role[] = [
     name: "VP Design",
     blurb:
       "Lead Blueprint's design culture and oversee each project's designer. Advise designers and spearhead design education across the club.",
-    open: true,
+    open: false,
     form: "[VP_DESIGN_FORM_URL]",
   },
   {

@@ -2,6 +2,7 @@ export default function AboutCTA() {
   return (
     <section className="px-6 py-24 sm:px-12 lg:px-24">
       <div className="mx-auto grid max-w-6xl gap-6 lg:grid-cols-2">
+        {/*
         <div className="rounded-2xl bg-primary p-10 text-white">
           <h3 className="font-heading text-2xl font-bold sm:text-3xl">
             Join the next team.
@@ -33,6 +34,7 @@ export default function AboutCTA() {
             Start a conversation
           </a>
         </div>
+        */}
       </div>
     </section>
   );

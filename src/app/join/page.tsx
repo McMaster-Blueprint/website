@@ -15,7 +15,9 @@ export default function JoinPage() {
     <div className="flex flex-1 flex-col">
       <JoinHero />
       <JoinRoles />
+      {/*
       <JoinProcess />
+      */}
       <JoinFaq />
     </div>
   );

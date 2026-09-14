@@ -73,12 +73,14 @@ export default function HomeProjects() {
           </div>
         </div>
 
+        {/*
         <a
           href="/projects"
           className="mt-10 inline-flex items-center gap-1.5 rounded-full bg-white px-6 py-3 font-heading text-sm font-semibold text-primary transition hover:bg-white/90"
         >
           View all projects <span aria-hidden="true">&rarr;</span>
         </a>
+        */}
       </div>
     </section>
   );

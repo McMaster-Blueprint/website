@@ -7,7 +7,7 @@ export default function HomeAbout() {
         </h2>
         <p className="text-2xl leading-relaxed text-ink">
           We believe good software shouldn&apos;t be out of reach for the
-          organizations doing the most good. Every term, a student team
+          organizations doing the most good. Every year, a student team
           builds it for free.
         </p>
       </div>
