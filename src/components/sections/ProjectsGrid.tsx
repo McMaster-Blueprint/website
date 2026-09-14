@@ -1,3 +1,4 @@
+/*
 import Image from "next/image";
 
 const projects = [
@@ -20,16 +21,37 @@ const projects = [
     image: "/projects/compass.jpg",
   },
 ];
+*/
 
 export default function ProjectsGrid() {
   return (
     <section className="px-6 py-24 sm:px-12 lg:px-24">
       <div className="mx-auto max-w-6xl">
+        {/*
         <h2 className="max-w-2xl font-heading text-3xl font-bold leading-[1.15] text-primary sm:text-4xl">
           Built for partners, not for portfolios.
         </h2>
+        */}
 
-        <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mx-auto max-w-2xl text-center">
+          <h2 className="font-heading text-3xl font-bold leading-[1.15] text-primary sm:text-4xl">
+            Coming soon.
+          </h2>
+          <p className="mx-auto mt-4 max-w-xl leading-relaxed text-ink">
+            McMaster Blueprint is just starting out, so our project selection
+            will be finalized closer to the end of 2026. If you&apos;re
+            interested in joining a project team, we&apos;d love to hear from
+            you.
+          </p>
+          <a
+            href="/join"
+            className="mt-8 inline-block rounded-full bg-primary px-8 py-3 font-heading font-semibold text-white transition hover:bg-primary/90"
+          >
+            Join the team
+          </a>
+        </div>
+
+        {/* <div className="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {projects.map((project) => (
             <div
               key={project.name}
@@ -57,7 +79,7 @@ export default function ProjectsGrid() {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
   );
