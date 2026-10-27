@@ -1,3 +1,24 @@
+import PhotoCarousel from "@/components/ui/PhotoCarousel";
+
+const photos = [
+  {
+    src: "/about/meeting-room.jpg",
+    alt: "Blueprint members listening to a presentation at a general meeting",
+  },
+  {
+    src: "/about/meeting-presenter.jpg",
+    alt: "A VP presenting at a Blueprint info session",
+  },
+  {
+    src: "/landing/meeting-crowd.jpg",
+    alt: "Students at a Blueprint info session",
+  },
+  {
+    src: "/about/meeting-presenter-2.jpg",
+    alt: "Students listening to a presentation at Blueprint",
+  },
+];
+
 export default function AboutMission() {
   return (
     <section id="mission" className="px-6 py-24 sm:px-12 lg:px-24">
@@ -16,28 +37,13 @@ export default function AboutMission() {
             people who build communities and look after public welfare.
           </p>
 
-          <div className="mt-8 space-y-5 text-lg leading-relaxed text-ink">
-            <p>
-              Nonprofits run on thin margins. A booking system, a volunteer
-              database, a website that works properly on a phone &mdash; the
-              tools that would free up hours every week are usually the first
-              things cut from the budget. Meanwhile there&apos;s a campus full of
-              students who can build exactly that, and who are looking for real
-              work to do.
-            </p>
-            <p>
-              McMaster Blueprint puts those two things in the same room. We take
-              on partners in Hamilton and the surrounding region, scope the work
-              honestly, and build it over a term with designers, developers and a
-              product manager. There&apos;s no invoice at the end and no strings
-              on the code &mdash; the partner owns what we make.
-            </p>
-          </div>
-
           <div className="mt-10 rounded-lg bg-neutral-50 p-6">
             <p className="text-lg leading-relaxed text-ink">
-              Blueprint started at UC Berkeley and has grown into chapters across
-              North America. McMaster joined the network in 2026 and follows the same five values every chapter shares.
+              Blueprint is a multinational organization founded in 2013 at the
+              University of California, Berkeley. McMaster joined the network
+              in 2026 as the fifth Canadian chapter, after Waterloo, Toronto,
+              Carleton and Simon Fraser, and follows the same five values every
+              chapter shares.
             </p>
             <a
               href="https://calblueprint.org/chapters"
@@ -49,6 +55,10 @@ export default function AboutMission() {
             </a>
           </div>
         </div>
+      </div>
+
+      <div className="mx-auto mt-16 max-w-6xl">
+        <PhotoCarousel photos={photos} />
       </div>
     </section>
   );
