@@ -22,11 +22,11 @@ function UniversityHallIllustration() {
         {/* cornice */}
         <path d="M96 202h228M96 194h228M96 194v8M324 194v8" />
         {/* corner turrets */}
-        <path d="M88 380V176h22M332 380V176h-22M88 176h22M310 176h22" />
-        <path d="M88 164h6v12M100 164h6v12M310 164h6v12M322 164h6v12" />
+        <path d="M88 380V164h6v6h2v-6h6v6h2v-6h6V194" />
+        <path d="M332 380V164h-6v6h-2v-6h-6v6h-2v-6h-6V194" />
         {/* tower */}
-        <path d="M170 202V88h80v114M170 88h80" />
-        <path d="M170 74h12v14M187 74h12v14M204 74h12v14M221 74h12v14M238 74h12v14" />
+        <path d="M170 194V74h10v6h7.5v-6h10v6h7.5v-6h10v6h7.5v-6h10v6h7.5v-6h10V194" />
+        <path d="M170 88h80" />
         {/* finial + flag */}
         <path d="M210 74V50" />
         <path d="M210 52l24 7-24 7" className="stroke-maroon" />
@@ -37,7 +37,7 @@ function UniversityHallIllustration() {
           d="M193 138h34M210 121v34M198 126l24 24M222 126l-24 24"
         />
         {/* tower lancet */}
-        <path d="M200 196v-24a10 10 0 0120 0v24" />
+        <path d="M200 194v-22a10 10 0 0120 0v22" />
         {/* arched windows */}
         <path d="M108 356v-56a12 12 0 0124 0v56" />
         <path d="M153 356v-56a12 12 0 0124 0v56" />
@@ -45,21 +45,20 @@ function UniversityHallIllustration() {
         <path d="M288 356v-56a12 12 0 0124 0v56" />
         <path
           className="opacity-70"
-          d="M120 300v56M165 300v56M255 300v56M300 300v56"
+          d="M120 288v68M165 288v68M255 288v68M300 288v68M108 322h24M153 322h24M243 322h24M288 322h24"
         />
+        {/* sills */}
+        <path d="M104 356h32M149 356h32M239 356h32M284 356h32" />
         {/* arched entrance */}
         <path d="M194 380v-80a16 16 0 0132 0v80" />
-        <rect
-          x="204"
-          y="336"
-          width="12"
-          height="44"
+        <path
+          d="M200 380v-78a10 10 0 0120 0v78z"
           className="fill-maroon"
           stroke="none"
         />
         {/* dimension line */}
         <g className="opacity-70" strokeWidth="1">
-          <path d="M70 420v34M350 420v34M70 446h64M286 446h64" />
+          <path d="M70 420v34M350 420v34M70 446h50M300 446h50" />
           <path
             d="M70 446l9-3.5v7zM350 446l-9-3.5v7z"
             className="fill-white"
@@ -87,8 +86,9 @@ export default function AboutHero() {
       highlight="us"
       body="We're McMaster students who build software for nonprofits, free of charge. Every term a full product team takes on one local organization and ships something they'll actually use."
       ctas={[
-        { href: "#values", label: "Our values" },
-        { href: "#process", label: "How a term runs", variant: "outline" },
+        { href: "#mission", label: "Our mission" },
+        { href: "#values", label: "Our values", variant: "outline" },
+        { href: "#team", label: "The team", variant: "outline" },
       ]}
       illustration={<UniversityHallIllustration />}
     />

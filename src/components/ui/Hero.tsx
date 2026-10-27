@@ -28,21 +28,6 @@ export default function Hero({
   return (
     <section className="relative overflow-hidden bg-linear-to-b from-primary to-primary-light px-6 pb-24 pt-36 text-white sm:px-12 sm:pt-40 lg:px-24">
       <div
-        aria-hidden
-        className="pointer-events-none absolute inset-0 opacity-45"
-        style={{
-          backgroundImage: `
-            linear-gradient(to right, rgba(255,255,255,0.30) 1px, transparent 1px),
-            linear-gradient(to bottom, rgba(255,255,255,0.30) 1px, transparent 1px),
-            linear-gradient(to right, rgba(255,255,255,0.12) 1px, transparent 1px),
-            linear-gradient(to bottom, rgba(255,255,255,0.12) 1px, transparent 1px)`,
-          backgroundSize: "112px 112px, 112px 112px, 16px 16px, 16px 16px",
-          maskImage:
-            "radial-gradient(120% 90% at 50% 0%, black 30%, transparent 85%)",
-        }}
-      />
-
-      <div
         className={`relative mx-auto max-w-6xl ${
           illustration
             ? "grid items-center gap-12 lg:grid-cols-[1.05fr_0.95fr]"

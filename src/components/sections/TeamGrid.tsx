@@ -34,8 +34,6 @@ type Group = {
   id: string;
   label: string;
   members: Member[];
-  /** Renders dashed "open role" cards after the members. */
-  openRoles?: string[];
 };
 
 const groups: Group[] = [
@@ -49,7 +47,7 @@ const groups: Group[] = [
         program: "Software Engineering",
         year: "Second Year",
         linkedin: "https://www.linkedin.com/in/zhaooscar/",
-        photo: null,
+        photo: "/team/oscar-zhao.jpg",
       },
       {
         name: "Parth Narkhede",
@@ -57,7 +55,7 @@ const groups: Group[] = [
         program: "Math & Stats",
         year: "Third Year",
         linkedin: "https://www.linkedin.com/in/parth-narkhede-b2a684260/",
-        photo: null,
+        photo: "/team/parth-narkhede.jpg",
       },
       {
         name: "Aneek Mukherjee",
@@ -100,14 +98,6 @@ const groups: Group[] = [
         photo: "/team/mikael-gomez.jpg",
       },
       {
-        name: "Jun Nur Mustaqeen",
-        role: "VP External",
-        program: "Computer Engineering",
-        year: "Third Year",
-        linkedin: "https://www.linkedin.com/in/jun-nur-mustaqeem/",
-        photo: null,
-      },
-      {
         name: "Ritisha Perumalla",
         role: "VP External",
         program: "Software Engineering",
@@ -116,7 +106,6 @@ const groups: Group[] = [
         photo: "/team/ritisha-perumalla.jpg",
       },
     ],
-    openRoles: ["VP Operations", "VP Internal"],
   },
 ];
 
@@ -132,69 +121,44 @@ function initials(name: string) {
 
 function MemberCard({ member }: { member: Member }) {
   return (
-    <li className="group rounded-xl border border-neutral-200 p-3 transition hover:border-primary/40 hover:shadow-sm">
-      <div className="relative aspect-square overflow-hidden rounded-lg bg-primary/5">
+    <li className="group">
+      <div className="relative aspect-square overflow-hidden rounded-xl bg-primary/5 shadow-sm transition duration-300 group-hover:-translate-y-1 group-hover:shadow-lg group-hover:shadow-primary/20">
         {member.photo ? (
           <Image
             src={member.photo}
             alt={member.name}
             fill
-            sizes="(max-width: 640px) 33vw, (max-width: 1024px) 20vw, 150px"
-            className="object-cover"
+            sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 220px"
+            className="object-cover transition duration-500 group-hover:scale-105"
           />
         ) : (
-          <div className="flex h-full w-full items-center justify-center border border-dashed border-primary/25">
+          <div className="flex h-full w-full items-center justify-center">
             <span
               aria-hidden
-              className="font-heading text-xl font-bold text-primary/35"
+              className="font-heading text-3xl font-bold text-primary/35"
             >
               {initials(member.name)}
             </span>
           </div>
         )}
-      </div>
-
-      <div className="mt-2.5 flex items-start justify-between gap-2">
-        <div className="min-w-0">
-          <h3 className="truncate font-heading text-sm font-bold leading-tight text-primary">
-            {member.name}
-          </h3>
-          <p className="mt-0.5 text-xs leading-tight text-neutral-500">
-            {member.role}
-          </p>
-        </div>
         {member.linkedin && (
           <a
             href={member.linkedin}
             target="_blank"
             rel="noopener noreferrer"
             aria-label={`${member.name} on LinkedIn`}
-            className="mt-0.5 inline-flex size-6 flex-none items-center justify-center rounded-md text-neutral-400 transition hover:bg-primary hover:text-white"
+            className="absolute bottom-2.5 right-2.5 inline-flex size-8 items-center justify-center rounded-full bg-white text-primary shadow-md transition hover:bg-primary hover:text-white focus-visible:opacity-100 sm:opacity-0 sm:group-hover:opacity-100"
           >
-            <LinkedinIcon className="size-3.5" />
+            <LinkedinIcon className="size-4" />
           </a>
         )}
       </div>
-    </li>
-  );
-}
 
-function OpenSeatCard({ role }: { role: string }) {
-  return (
-    <li className="flex flex-col rounded-xl border border-dashed border-neutral-300 bg-neutral-50 p-3">
-      <div className="flex aspect-square items-center justify-center rounded-lg border border-dashed border-neutral-300">
-        <span
-          aria-hidden
-          className="font-heading text-xl font-bold text-neutral-300"
-        >
-          ?
-        </span>
-      </div>
-      <h3 className="mt-2.5 font-heading text-sm font-bold leading-tight text-neutral-400">
-        {role}
+      <h3 className="mt-3 font-heading text-base font-semibold leading-tight text-ink">
+        {member.name}
       </h3>
-      <p className="mt-0.5 text-xs leading-tight text-neutral-400">
-        Currently Recruiting
+      <p className="mt-1 text-sm leading-tight text-neutral-500">
+        {member.role}
       </p>
     </li>
   );
@@ -203,35 +167,20 @@ function OpenSeatCard({ role }: { role: string }) {
 export default function TeamGrid() {
   return (
     <section id="team" className="px-6 py-24 sm:px-12 lg:px-24">
-      <div className="mx-auto max-w-6xl space-y-16">
-        {groups.map((group) => {
-          const openRoles = group.openRoles ?? [];
-
-          return (
+      <div className="mx-auto max-w-6xl space-y-24">
+        {groups.map((group) => (
             <div key={group.id}>
-              <div className="flex items-baseline justify-between gap-4 border-b border-neutral-200 pb-4">
-                <h2 className="font-heading text-2xl font-bold text-primary sm:text-3xl">
-                  {group.label}
-                </h2>
-                {group.members.length > 0 && (
-                  <span className="font-mono text-xs uppercase tracking-[0.14em] text-neutral-400">
-                    {group.members.length}{" "}
-                    {group.members.length === 1 ? "member" : "members"}
-                  </span>
-                )}
-              </div>
+              <h2 className="font-heading text-5xl font-bold lowercase leading-none tracking-tight text-primary sm:text-7xl">
+                {group.label}
+              </h2>
 
-              <ul className="mt-8 grid grid-cols-3 gap-4 sm:grid-cols-4 lg:grid-cols-6">
+              <ul className="mt-12 grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-3 lg:grid-cols-4">
                 {group.members.map((member) => (
                   <MemberCard key={member.name} member={member} />
                 ))}
-                {openRoles.map((role) => (
-                  <OpenSeatCard key={role} role={role} />
-                ))}
               </ul>
             </div>
-          );
-        })}
+        ))}
       </div>
     </section>
   );

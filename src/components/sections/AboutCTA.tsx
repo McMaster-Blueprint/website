@@ -1,40 +1,29 @@
 export default function AboutCTA() {
   return (
-    <section className="px-6 py-24 sm:px-12 lg:px-24">
-      <div className="mx-auto grid max-w-6xl gap-6 lg:grid-cols-2">
-        {/*
-        <div className="rounded-2xl bg-primary p-10 text-white">
-          <h3 className="font-heading text-2xl font-bold sm:text-3xl">
-            Join the next team.
-          </h3>
-          <p className="mt-3 max-w-sm leading-relaxed text-white/85">
-            Applications open at the start of each term for developers, designers
-            and product managers. No prior nonprofit experience needed.
+    <section id="team" className="px-6 py-24 sm:px-12 lg:px-24">
+      <div className="mx-auto flex max-w-6xl flex-col items-start justify-between gap-8 rounded-2xl bg-primary p-10 text-white sm:flex-row sm:items-center sm:p-14">
+        <div>
+          <h2 className="font-heading text-3xl font-bold leading-[1.15] sm:text-4xl">
+            The team.
+          </h2>
+          <p className="mt-3 max-w-md text-lg leading-relaxed text-white/85">
+            Meet the students running McMaster Blueprint this year.
           </p>
-          <a
-            href="/join"
-            className="mt-8 inline-block rounded-full bg-white px-8 py-3 font-heading font-semibold text-primary transition hover:bg-white/90"
-          >
-            See open roles
-          </a>
         </div>
-
-        <div className="rounded-2xl bg-primary p-10 text-white">
-          <h3 className="font-heading text-2xl font-bold sm:text-3xl">
-            Bring us a problem.
-          </h3>
-          <p className="mt-3 max-w-sm leading-relaxed text-white/85">
-            Tell us what&apos;s slowing your organization down. If software is
-            the right answer, we&apos;ll scope it with you at no cost.
-          </p>
-          <a
-            href="/contact"
-            className="mt-8 inline-block rounded-full bg-white px-8 py-3 font-heading font-semibold text-primary transition hover:bg-white/90"
+        <a
+          href="/team"
+          className="group inline-flex flex-none items-center gap-3 rounded-full bg-white py-2 pl-7 pr-2 font-heading font-semibold text-primary shadow-sm transition duration-300 ease-out hover:-translate-y-0.5 hover:shadow-xl hover:shadow-black/20"
+        >
+          Meet the team
+          <span
+            aria-hidden
+            className="inline-flex size-9 items-center justify-center rounded-full bg-primary/10 transition duration-300 ease-out group-hover:bg-primary group-hover:text-white"
           >
-            Start a conversation
-          </a>
-        </div>
-        */}
+            <span className="transition-transform duration-300 ease-out group-hover:translate-x-0.5">
+              &rarr;
+            </span>
+          </span>
+        </a>
       </div>
     </section>
   );
