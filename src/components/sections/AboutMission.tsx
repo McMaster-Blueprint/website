@@ -17,6 +17,26 @@ const photos = [
     src: "/about/meeting-presenter-2.jpg",
     alt: "Students listening to a presentation at Blueprint",
   },
+  {
+    src: "/about/info-session-title.jpg",
+    alt: "A presenter opening the Blueprint info session in front of the title slide",
+  },
+  {
+    src: "/about/info-session-room.jpg",
+    alt: "A full room of students at the Blueprint info session",
+  },
+  {
+    src: "/about/info-session-roadmap.jpg",
+    alt: "A presenter sharing Blueprint's plans for the year",
+  },
+  {
+    src: "/about/info-session-project-leads.jpg",
+    alt: "A presenter explaining the project lead role at the info session",
+  },
+  {
+    src: "/about/info-session-crowd.jpg",
+    alt: "Students seated around tables during the Blueprint info session",
+  },
 ];
 
 export default function AboutMission() {

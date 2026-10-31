@@ -15,8 +15,8 @@ export default function HomeHero() {
       <Image
         src="/logos/logo_negative.png"
         alt="McMaster Blueprint"
-        width={96}
-        height={96}
+        width={288}
+        height={290}
         className="relative z-10 mb-8 h-24 w-auto"
         priority
       />
