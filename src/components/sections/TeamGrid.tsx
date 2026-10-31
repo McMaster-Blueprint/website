@@ -39,7 +39,7 @@ type Group = {
 const groups: Group[] = [
   {
     id: "exec",
-    label: "Executive team",
+    label: "The Executive Team!",
     members: [
       {
         name: "Oscar Zhao",
@@ -170,7 +170,7 @@ export default function TeamGrid() {
       <div className="mx-auto max-w-6xl space-y-24">
         {groups.map((group) => (
             <div key={group.id}>
-              <h2 className="font-heading text-5xl font-bold lowercase leading-none tracking-tight text-primary sm:text-7xl">
+              <h2 className="font-heading text-3xl font-bold leading-none tracking-tight text-primary sm:text-5xl">
                 {group.label}
               </h2>
 
