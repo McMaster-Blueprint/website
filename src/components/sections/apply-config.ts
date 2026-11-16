@@ -20,7 +20,7 @@ export const roles: Role[] = [
     name: "Developer",
     blurb:
       "You'll work across the stack on a real codebase with a small team, shipping software a nonprofit will actually use.",
-    open: true,
+    open: false,
     form: "[DEVELOPER_FORM_URL]",
   },
   {
@@ -69,7 +69,7 @@ export const roles: Role[] = [
     name: "VP Operations",
     blurb:
       "Manage internal logistics: finances, room bookings, attendance, and the day-to-day that keeps the chapter running.",
-    open: true,
+    open: false,
     form: "[VP_OPERATIONS_FORM_URL]",
   },
 ]
