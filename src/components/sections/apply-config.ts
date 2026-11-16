@@ -21,14 +21,14 @@ export const roles: Role[] = [
     blurb:
       "You'll work across the stack on a real codebase with a small team, shipping software a nonprofit will actually use.",
     open: false,
-    form: "[DEVELOPER_FORM_URL]",
+    form: "https://forms.gle/SjJs8VAxYiDiYwqC6",
   },
   {
     name: "Product Manager",
     blurb:
       "Keep the project moving. Scope the work with the partner, run the team's process, and make the calls that keep a term on track.",
     open: false,
-    form: "[PM_FORM_URL]",
+    form: "https://forms.gle/SjJs8VAxYiDiYwqC6",
   },
   {
     name: "VP Projects",
