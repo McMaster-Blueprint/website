@@ -12,9 +12,9 @@ export default function Home() {
 
       <HomeAbout />
 
-      {/*
+      {
       <HomeProjects />
-      */}
+      }
 
       <HomeEvents />
 
