@@ -26,6 +26,7 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --font-heading: var(--font-poppins);
+  --font-hand: var(--font-caveat-brush), "Segoe Print", "Bradley Hand", cursive;
 }
 
 html {
@@ -90,4 +91,53 @@ body {
   left: -1px;
   border-bottom: 1.5px solid var(--color-primary);
   border-left: 1.5px solid var(--color-primary);
+}
+
+/* Blueprint drafting grid: fine lines every 24px, heavier every 120px.
+   Sits on top of a blue background colour. */
+.bp-grid {
+  background-image:
+    linear-gradient(rgb(255 255 255 / 0.13) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(255 255 255 / 0.13) 1px, transparent 1px),
+    linear-gradient(rgb(255 255 255 / 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(255 255 255 / 0.07) 1px, transparent 1px);
+  background-size:
+    120px 120px,
+    120px 120px,
+    24px 24px,
+    24px 24px;
+  background-position: center top;
+}
+
+/* Graph paper for the white project sheets. */
+.bp-paper {
+  background-color: #ffffff;
+  background-image:
+    linear-gradient(rgb(0 120 232 / 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(0 120 232 / 0.07) 1px, transparent 1px);
+  background-size: 16px 16px;
+}
+
+/* Same drafting grid as .bp-grid, plus a fade at the top that picks up the
+   light blue from the bottom of the hero so there's no hard line. */
+.bp-grid-fade {
+  background-image:
+    linear-gradient(rgb(255 255 255 / 0.13) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(255 255 255 / 0.13) 1px, transparent 1px),
+    linear-gradient(rgb(255 255 255 / 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(255 255 255 / 0.07) 1px, transparent 1px),
+    linear-gradient(var(--color-primary-light), transparent);
+  background-size:
+    120px 120px,
+    120px 120px,
+    24px 24px,
+    24px 24px,
+    100% 22rem;
+  background-position:
+    center top,
+    center top,
+    center top,
+    center top,
+    center top;
+  background-repeat: repeat, repeat, repeat, repeat, no-repeat;
 }

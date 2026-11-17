@@ -60,6 +60,7 @@ export default function Hero({
                 <a
                   key={cta.label}
                   href={cta.href}
+                  {...(cta.href.startsWith("http") && { target: "_blank", rel: "noopener noreferrer" })}
                   className={
                     cta.variant === "outline"
                       ? "rounded-full border border-white/40 px-8 py-3 font-heading font-semibold text-white transition hover:bg-white/10"
