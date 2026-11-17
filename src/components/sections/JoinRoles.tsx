@@ -1,11 +1,8 @@
 import Reveal from "@/components/ui/Reveal";
-import { applicationsOpen, closedMessage, roles } from "./apply-config";
+import { APPLICATION_FORM, applicationsOpen, closedMessage } from "./apply-config";
 
 export default function JoinRoles() {
-  const openRoles = roles.filter((role) => role.open);
-
-  // Page closed, or nothing actually open -> single "check back" message.
-  if (!applicationsOpen || openRoles.length === 0) {
+  if (!applicationsOpen) {
     return (
       <section id="roles" className="px-6 py-24 sm:px-12 lg:px-24">
         <div className="mx-auto max-w-6xl">
@@ -25,33 +22,24 @@ export default function JoinRoles() {
     <section id="roles" className="px-6 py-24 sm:px-12 lg:px-24">
       <div className="mx-auto max-w-6xl">
         <Reveal>
-          <h2 className="max-w-2xl font-heading text-3xl font-bold leading-[1.15] text-primary sm:text-4xl">
-            We&apos;re hiring.
-          </h2>
+          <div className="rounded-2xl bg-primary p-10 text-white sm:p-16">
+            <h2 className="max-w-2xl font-heading text-3xl font-bold leading-[1.15] sm:text-4xl">
+              We&apos;re hiring team leads, designers and developers.
+            </h2>
+            <p className="mt-4 max-w-lg leading-relaxed text-white/85">
+              Work with a small team on real software a Hamilton nonprofit will
+              actually use. No prior nonprofit experience needed.
+            </p>
+            <a
+              href={APPLICATION_FORM}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-9 inline-flex items-center gap-1.5 rounded-full bg-white px-8 py-3 font-heading font-semibold text-primary transition hover:bg-white/90"
+            >
+              Apply <span aria-hidden>&rarr;</span>
+            </a>
+          </div>
         </Reveal>
-
-        <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {openRoles.map((role, i) => (
-            <Reveal key={role.name} delay={i * 80}>
-              <div className="flex h-full flex-col rounded-2xl border border-neutral-200 p-7">
-                <h3 className="font-heading text-xl font-bold text-primary">
-                  {role.name}
-                </h3>
-                <p className="mt-3 flex-1 leading-relaxed text-ink">
-                  {role.blurb}
-                </p>
-                <a
-                  href={role.form}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-6 inline-flex items-center gap-1.5 self-start rounded-full bg-primary px-6 py-3 font-heading text-sm font-semibold text-white transition hover:bg-primary/90"
-                >
-                  Apply <span aria-hidden>&rarr;</span>
-                </a>
-              </div>
-            </Reveal>
-          ))}
-        </div>
       </div>
     </section>
   );

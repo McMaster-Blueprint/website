@@ -3,7 +3,7 @@ export default function TeamHiring() {
     <section className="px-6 pb-24 sm:px-12 lg:px-24">
       <div className="mx-auto max-w-6xl overflow-hidden rounded-2xl bg-primary px-8 py-14 text-white sm:px-14">
         <h2 className="max-w-2xl font-heading text-3xl font-bold leading-[1.1] sm:text-4xl">
-          We&apos;re hiring a VP Operations, a VP Internal, and developers!
+          We&apos;re hiring team leads, designers and developers!
         </h2>
         <p className="mt-4 max-w-lg leading-relaxed text-white/85">
           Project team applications for developers, designers and project
