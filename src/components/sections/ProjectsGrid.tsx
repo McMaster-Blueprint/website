@@ -42,7 +42,7 @@ export default function ProjectsGrid() {
   return (
     <section
       id="projects"
-      className="bp-grid relative overflow-hidden bg-primary px-6 py-24 sm:px-12 lg:px-24"
+      className="bp-grid-fade relative overflow-hidden bg-primary px-6 py-24 sm:px-12 lg:px-24"
     >
       <div className="mx-auto max-w-6xl">
         <Reveal>

@@ -117,3 +117,27 @@ body {
     linear-gradient(90deg, rgb(0 120 232 / 0.07) 1px, transparent 1px);
   background-size: 16px 16px;
 }
+
+/* Same drafting grid as .bp-grid, plus a fade at the top that picks up the
+   light blue from the bottom of the hero so there's no hard line. */
+.bp-grid-fade {
+  background-image:
+    linear-gradient(rgb(255 255 255 / 0.13) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(255 255 255 / 0.13) 1px, transparent 1px),
+    linear-gradient(rgb(255 255 255 / 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(255 255 255 / 0.07) 1px, transparent 1px),
+    linear-gradient(var(--color-primary-light), transparent);
+  background-size:
+    120px 120px,
+    120px 120px,
+    24px 24px,
+    24px 24px,
+    100% 22rem;
+  background-position:
+    center top,
+    center top,
+    center top,
+    center top,
+    center top;
+  background-repeat: repeat, repeat, repeat, repeat, no-repeat;
+}
