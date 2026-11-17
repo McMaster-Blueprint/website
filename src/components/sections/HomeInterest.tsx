@@ -1,3 +1,5 @@
+import { APPLICATION_FORM } from "./apply-config";
+
 export default function HomeInterest() {
   return (
     <section
@@ -19,7 +21,9 @@ export default function HomeInterest() {
               start of every semester. No prior nonprofit experience needed.
             </p>
             <a
-              href="/join"
+              href={APPLICATION_FORM}
+              target="_blank"
+              rel="noopener noreferrer"
               className="mt-8 inline-block rounded-full bg-white px-8 py-3 font-heading font-semibold text-primary transition hover:bg-white/90"
             >
               Apply now
